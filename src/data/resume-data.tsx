@@ -1,6 +1,7 @@
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Santiago Forero A",
+  initials: "SF",
   location: "Bogotá, Colombia",
   locationLink: "https://www.google.com/maps/place/Bogota",
   about:

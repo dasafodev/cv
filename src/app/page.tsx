@@ -47,14 +47,14 @@ export default function Page() {
                   </a>
                 </Button>
               ) : null}
-              {RESUME_DATA.contact.tel ? (
+              {(RESUME_DATA.contact as any).tel ? (
                 <Button
                   className="size-8"
                   variant="outline"
                   size="icon"
                   asChild
                 >
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
+                  <a href={`tel:${(RESUME_DATA.contact as any).tel}`}>
                     <PhoneIcon className="size-4" />
                   </a>
                 </Button>
@@ -79,9 +79,9 @@ export default function Page() {
                   <span className="underline">{RESUME_DATA.contact.email}</span>
                 </a>
               ) : null}
-              {RESUME_DATA.contact.tel ? (
-                <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                  <span className="underline">{RESUME_DATA.contact.tel}</span>
+              {(RESUME_DATA.contact as any).tel ? (
+                <a href={`tel:${(RESUME_DATA.contact as any).tel}`}>
+                  <span className="underline">{(RESUME_DATA.contact as any).tel}</span>
                 </a>
               ) : null}
             </div>
