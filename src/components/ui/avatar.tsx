@@ -1,7 +1,7 @@
 "use client";
 
-import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -27,6 +27,9 @@ const AvatarImage = React.forwardRef<
   <AvatarPrimitive.Image
     ref={ref}
     className={cn("aspect-square h-full w-full", className)}
+    style={{
+      objectFit: "cover",      
+    }}
     {...props}
   />
 ));
@@ -47,4 +50,5 @@ const AvatarFallback = React.forwardRef<
 ));
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
-export { Avatar, AvatarImage, AvatarFallback };
+export { Avatar, AvatarFallback, AvatarImage };
+
