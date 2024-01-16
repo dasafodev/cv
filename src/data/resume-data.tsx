@@ -92,7 +92,7 @@ export const RESUME_DATA = {
       description: "Price comparison app for supermarket products.",      
       link: {
         label: "compi.app",
-        href: "https://consultly.com/",
+        href: "https://compi.app/",
       },
     },
     {
@@ -204,7 +204,7 @@ export const RESUME_DATA_ES = {
       description: "App comparadora de precios en supermercados.",      
       link: {
         label: "compi.app",
-        href: "https://consultly.com/",
+        href: "https://compi.app/",
       },
     },
     {
